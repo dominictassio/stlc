@@ -1,0 +1,8 @@
+let fac = fix fac: Int -> Int => n: Int => if n == 1 then 1 else n * fac (n - 1)
+
+let type Option = <Some: Int, None: ()>
+
+let main = _: () =>
+    match <Some = 42> as <Some: Int, None: ()> with
+        <Some = n> => n,
+        <None = ()> => 0
